@@ -1,20 +1,27 @@
+
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     font-family: helvetica;
+    font-weight: lighter;
 }
 
 body {
   background-color: salmon;
 }
 
+.header {
+  margin: auto;
+  padding: 25px;
+}
 .grid {
   margin: 0 auto;
   max-width: 1100px;
   width: 100%;
-  height: 906px;
+  height: auto;
   position: relative;
 }
 
@@ -22,6 +29,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  height: auto;
   clear: both;
 }
 
@@ -52,9 +60,45 @@ body {
   background-color: #C1CFDC;
   text-align: center;
 }
+.col-3 {
+  width: 25%;
+  height: auto;
+  background-color: #F68F42;
+}
+
+.col-9 {
+  width: 75%;
+  height: auto;
+}
 
 .col-12 {
   width: 100%;
+  background-color: #EEA292;
+  height: 100px;
+}
+
+.otherpoints {
+  width: 66.6%;
+  background-color: #F2AF9E;
+  height: auto;
+  padding: 10px;
+
+}
+
+.pointsother {
+  width: 33.3%;
+  height: auto;
+  background-color: salmon;
+}
+
+
+#space {
+  height: 100px;
+}
+
+#space2 {
+  height: 100px;
+
 }
 
 .bodytext {
@@ -66,17 +110,16 @@ body {
 h2 {
   text-align: center;
   color: #69A583;
-  font-family: Helvetica;
   font-size: 26px;
-  font-weight: lighter;
 }
 
-h4 {
+
+
+h5 {
   text-align: center;
-  color: #69A583;
-  font-family: Helvetica;
-  font-weight: lighter;
+  font-size: 20px;
 }
+
 
 ul {
   list-style: none;
@@ -84,8 +127,9 @@ ul {
   /*font-size: 18px;*/
 }
 
-p, .col-4 {
+p, .col-4, .col-9  {
   padding: 10px;
+  margin: auto;
 }
 
 .blog {
@@ -113,11 +157,5 @@ a {
   list-style: none;
   text-align: center;
   font-size: 20px;
-}
-
-#techblog {
-  /*position: relative;*/
-  /*clear: both;*/
-  margin-top: 400px;
-  margin-bottom: 100px;
+  margin: 40px;
 }

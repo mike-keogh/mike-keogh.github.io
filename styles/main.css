@@ -1,13 +1,13 @@
-
-
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: helvetica;
-    font-weight: lighter;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: helvetica;
+  font-weight: lighter;
 }
+
+
 
 body {
   background-color: salmon;
@@ -16,7 +16,9 @@ body {
 .header {
   margin: auto;
   padding: 25px;
+
 }
+
 .grid {
   margin: 0 auto;
   max-width: 1100px;
@@ -33,6 +35,11 @@ body {
   clear: both;
 }
 
+.col-2 {
+  width: 16.6%;
+  height: auto;
+  background-color: #E3E0DB;
+}
 .col-4 {
   width: 33.3%;
   height: 300px;
@@ -60,6 +67,7 @@ body {
   background-color: #C1CFDC;
   text-align: center;
 }
+
 .col-3 {
   width: 25%;
   height: auto;
@@ -68,6 +76,11 @@ body {
 
 .col-9 {
   width: 75%;
+  height: auto;
+}
+
+.col-10 {
+  width: 83.3%;
   height: auto;
 }
 
@@ -82,7 +95,6 @@ body {
   background-color: #F2AF9E;
   height: auto;
   padding: 10px;
-
 }
 
 .pointsother {
@@ -91,15 +103,26 @@ body {
   background-color: salmon;
 }
 
-
 #space {
   height: 100px;
 }
 
 #space2 {
   height: 100px;
-
 }
+
+#search {
+  height: auto;
+  background-color: #F68F42;
+  width: 83.3%;
+  float: right;
+  display: flex;
+}
+
+/*#searchrow {
+  float: left;
+  display: flex;
+}*/
 
 .bodytext {
   padding: 40px;
@@ -113,13 +136,10 @@ h2 {
   font-size: 26px;
 }
 
-
-
 h5 {
   text-align: center;
   font-size: 20px;
 }
-
 
 ul {
   list-style: none;
@@ -127,7 +147,7 @@ ul {
   /*font-size: 18px;*/
 }
 
-p, .col-4, .col-9  {
+p, .col-4, .col-9, .col-10 {
   padding: 10px;
   margin: auto;
 }

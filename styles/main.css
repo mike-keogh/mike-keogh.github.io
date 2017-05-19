@@ -5,6 +5,7 @@
 * {
   font-family: helvetica, sans-serif;
   font-weight: lighter;
+  background-color: AntiqueWhite;
 }
 
 .container {
@@ -15,11 +16,26 @@
   text-align: center;
 }
 
+/*__________NAVIGATION BAR__________*/
 
 #nav {
   height: auto;
-
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  text-align: center;
+}
+
+
+
+
 
 #homeblog {
   width: 33.3%;
@@ -38,7 +54,10 @@
 
 }
 
-#homeimage {
-  margin: auto;
-  position: relative;
+img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }

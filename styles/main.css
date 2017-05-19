@@ -1,0 +1,44 @@
+* {
+  border: 1px solid black !important;
+}
+
+* {
+  font-family: helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.header {
+  text-align: center;
+}
+
+
+#nav {
+  height: auto;
+
+}
+
+#homeblog {
+  width: 33.3%;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 35%;
+}
+
+#aboutlink {
+  width: 33.3%;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 35%;
+
+}
+
+#homeimage {
+  margin: auto;
+  position: relative;
+}

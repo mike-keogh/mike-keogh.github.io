@@ -1,9 +1,11 @@
 
 
+
+
 /*__________GENERAL__________*/
 
 * {
-  border: 1px solid black !important;
+  /*border: 1px solid black !important;*/
   font-family: helvetica, sans-serif;
   font-weight: lighter;
   background-color: AntiqueWhite;
@@ -13,16 +15,43 @@
   max-width: 960px;
 }
 
-/*__________HEADER__________*/
+
+
+
+/*__________HEADERS__________*/
 
 .header {
   text-align: center;
+  padding-top: 1.33rem;
+  padding-bottom: 1.33rem;
 }
+
+h1 {
+  letter-spacing: 0.2rem;
+}
+
+h3 {
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+
+
 
 /*__________NAVIGATION BAR__________*/
 
-#nav {
+nav {
+  text-align: center;
+}
+
+#navindex {
   height: auto;
+  text-align: center;
+
+}
+
+#nav.container {
+  padding-bottom: 3rem;
 }
 
 ul {
@@ -34,8 +63,10 @@ ul {
 
 a, li {
   display: inline;
-  text-align: center;
+
 }
+
+
 
 
 /*__________INDEX PAGE__________*/
@@ -45,55 +76,115 @@ a, li {
   width: 33.3%;
   position: relative;
   text-align: center;
-  top: 50%;
-  left: 35%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 #aboutlink {
   width: 33.3%;
   position: relative;
   text-align: center;
-  top: 50%;
-  left: 35%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
 
 }
 
 img {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  padding-top: 4rem;
 }
 
+
+
+
 /*__________BLOG TEMPLATE__________*/
+
+#blogtemplate.container {
+  margin-top: 10rem;
+}
 
 #blogtemplate .row {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin: 0 auto;
 }
 
 #blogtemplate .four-columns {
   height: auto;
   width: 33%;
+  margin: 0 auto;
+  text-align: center;
 }
+
+
+
+
+/*__________TEXT__________*/
+
+a {
+  text-decoration: none;
+  color:
+}
+
+
+
+
+/*__________BLOG NAV__________*/
+
+#blognav {
+  display: inline;
+  text-align: center;
+}
+
+#previous {
+  margin-left: 2rem;
+}
+
+#next {
+  margin-right: 2rem;
+}
+
+
+
+
+/*__________FOOTER__________*/
+
+.row .eight-columns{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
 
 
 /*__________MEDIA QUERIES__________*/
 
 
 @media (min-width: 399px) {
-  #nav {
+  #navindex {
     display: none;
   }
+
   #indexblog.row {
     display: none;
   }
+
+  .row.blog {
+    display: block;
+    flex-wrap: nowrap;
+    clear: both;
+  }
 }
 
+
 @media (min-width: 750px) {
-  #nav {
+  #navindex {
     display: inline;
   }
 
@@ -104,7 +195,4 @@ img {
   #indexblog.row {
     display: inline;
   }
-
-
-
 }

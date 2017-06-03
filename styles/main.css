@@ -16,6 +16,7 @@
 
 html, body {
   height: 100%;
+  padding: 10px;
 }
 
 
@@ -40,6 +41,10 @@ h1 {
 
 h3 {
   letter-spacing: 0.3rem;
+  text-align: center;
+}
+
+h5 {
   text-align: center;
 }
 
